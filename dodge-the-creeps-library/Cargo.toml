@@ -1,0 +1,12 @@
+[package]
+name = "dodge-the-creeps-library"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+gdnative = { version = "0.9.3", default-features = false, features = [] }
+gdnative-bindings-custom = { path = "../gdnative-bindings-0.9.3" }
+rand = "0.8.4"
